@@ -1,0 +1,29 @@
+{
+	"name": "bilibili_time",
+	"description": "统计b站某合集视频已看多长时间",
+	"version": "1.0",
+	"manifest_version": 3,
+
+	"background": {
+		"service_worker": "background.js"
+	},
+	"permissions": ["tabs", "scripting", "storage", "activeTab"],
+	"host_permissions": [
+  	  "*://www.bilibili.com/*"
+	],
+	"action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+		"16": "images/icon16.png",
+		"32": "images/icon32.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	  }
+    },
+    "icons": {
+		"16": "images/icon16.png",
+		"32": "images/icon32.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	}
+}
